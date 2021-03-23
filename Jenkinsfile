@@ -17,5 +17,15 @@ pipeline {
                 echo 'Deploying....'
             }
         }
+        stage('UATTest') {
+            steps {
+                echo 'UATTest....'
+            }
+        }
+        stage('Prod-Deploy') {
+            steps {
+                echo 'Prod-Deploy....'
+            }  
+        }
     }
 }
